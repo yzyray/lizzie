@@ -129,6 +129,7 @@ public class LizzieFrame extends MainFrame {
     countResults = new CountResults();
     menu = new Menu();
     toolBar = new ToolBar();
+    if (!Lizzie.config.showToolBar) toolBar.setVisible(false);
     add(toolBar, BorderLayout.PAGE_END);
     setMinimumSize(new Dimension(640, 400));
     boolean persisted = Lizzie.config.persistedUi != null;

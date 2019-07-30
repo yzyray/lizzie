@@ -108,6 +108,7 @@ public class BoardPane extends LizziePane {
         new MouseAdapter() {
           @Override
           public void mousePressed(MouseEvent e) {
+            Lizzie.frame.toolBar.setTxtUnfocus();
             if (e.getButton() == MouseEvent.BUTTON1) { // left click
               if (e.getClickCount() == 2) { // TODO: Maybe need to delay check
                 onDoubleClicked(e.getX(), e.getY());

@@ -277,6 +277,7 @@ public class WinratePane extends LizziePane {
    * @param y y coordinate
    */
   public void onClicked(int x, int y) {
+    Lizzie.frame.toolBar.setTxtUnfocus();
     int moveNumber = winrateGraph.moveNumber(x, y);
     if (Lizzie.config.showWinrate && moveNumber >= 0) {
       Lizzie.frame.isPlayingAgainstLeelaz = false;
